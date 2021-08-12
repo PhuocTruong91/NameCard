@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- for-mobile-apps -->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- //for-mobile-apps -->
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<!-- Using Jquery -->
+	<script>
+		jQuery(document).ready(function ($) {
+			$('#sidebar-btn').click(function () {
+				$('#sidebar').toggleClass('visible');
+			});
+		});
+	</script>
+	<!--circlechart-->
+	<script src="js/jquery.circlechart.js"></script>
+	<!--circlechart-->
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="main" style="display: block; box-shadow: 0 0 5px rgba(3, 3, 3, 0.171)">
+			<div class="header"
+				style="background: linear-gradient(182.23deg, rgba(238, 222, 222, 0.822) -38.24%, rgba(152, 201, 235, 0.123) 82.03%); display: block; box-shadow: 0 0 50px rgba(3, 3, 3, 0.534); border-radius:0 0 10px 10px;">
+				<div class="hd-img">
+					<img src="images/ava.JPG" alt=" " class="img-responsive" />
+				</div>
+				<h2 style="color: rgb(0, 0, 0); margin-top:0px; font-family: monospace;">Phước Trường</h2>
+				<p
+					style="font-weight: bold; font-family: monospace; display: block; width: 350px; height: 20px; text-align:center; margin: auto; margin-top: 10px; color: rgba(241, 216, 216, 0.514);">
+					"to the world you maybe one person but to one person you maybe all the world"</p>
+				<div style="height: 10px;" id="clear"></div>
+			</div>
+
+			<section class="slider" style="margin-top: 20px">
+				<div class="flexslider">
+					<!-- <ul class="slides">
+						<li>
+							<div class="header-bottom_3">
+								<div class="jan">
+									<h3 style="text-align: center;">May 2016</h3>
+								</div>
+								<div class="jan-bottom">
+									<div class="jan-bottom-grid" id="facebook" style="background-color: #3d548e;">
+										<a href="https://www.facebook.com/P.T.H.9100/">
+											<div class="jan-bottom-grid-left1">
+												<p style="text-align: center;">Facebook</p>
+												 <img id="thumb" style="text-align: center; " src="images/facebook.png" alt="">
+											</div>
+											<div class="clear"></div>
+										</a>
+									</div>
+									<div class="jan-bottom-grid" id="instagram" style="background-color: #9E4C32;">
+										<a href="https://www.instagram.com/phc.trng/">
+										<div class="jan-bottom-grid-left1">
+											<p>instagram</p>
+										</div>										
+										<div class="clear"></div>
+									</a>
+									</div>
+									<div class="jan-bottom-grid" id="facebook" style="background-color: #ac372d;">
+										<a href="mailto:phuoctruong554@gmai.com">
+										<div class="jan-bottom-grid-left1">
+											<p>Gmail</p>
+										</div>										
+										<div class="clear"></div>
+										</a>	
+									</div>
+									<div class="jan-bottom-grid" id="facebook" style="background-color:#86bbff">
+										<a href="https://zalo.me/0934802184">
+										<div class="jan-bottom-grid-left1">
+											<p>Zalo</p>
+										</div>									
+										<div class="clear"></div>
+									</a>											
+									</div>
+									<div class="jan-bottom-grid" id="facebook" style="background-color: #2C6B3A; border-top: 1px solid #428498;">
+										<a href="tel:0934802184">
+										<div class="jan-bottom-grid-left1">
+											<p>Phone</p>
+										</div>									
+										<div class="clear"></div>
+									</a>											
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="header-bottom_3">
+								<div class="jan">
+									<h3 style="text-align: center;">June 2016</h3>
+								</div>
+								<div class="jan-bottom">
+									<div class="jan-bottom-grid">
+
+										<div class="jan-bottom-grid-left1">
+											<p>Finish Home Screen</p>
+										</div>
+										<div class="jan-bottom-grid-right">
+											<p>10 AM</p>
+										</div>
+										<div class="clear"></div>
+									</div>
+
+									<div class="jan-bottom-grid">
+
+										<div class="jan-bottom-grid-left1">
+											<p>Lunch Break</p>
+										</div>
+										<div class="jan-bottom-grid-right">
+											<p>1 PM</p>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div class="jan-bottom-grid">
+
+										<div class="jan-bottom-grid-left1">
+											<p>Design Meeting</p>
+										</div>
+										<div class="jan-bottom-grid-right">
+											<p>5 PM</p>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div class="jan-bottom-grid">
+
+										<div class="jan-bottom-grid-left1">
+											<p>Dinner</p>
+										</div>
+										<div class="jan-bottom-grid-right">
+											<p>9 PM</p>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="header-bottom_3">
+								<div class="jan">
+									<h3 style="text-align: center;">June 2016</h3>
+								</div>
+								<div class="jan-bottom">
+									<div class="jan-bottom-grid">
+
+										<div class="jan-bottom-grid-left1">
+											<p>Finish Home Screen</p>
+										</div>
+										<div class="jan-bottom-grid-right">
+											<p>10 AM</p>
+										</div>
+										<div class="clear"></div>
+									</div>
+
+									<div class="jan-bottom-grid">
+
+										<div class="jan-bottom-grid-left1">
+											<p>Lunch Break</p>
+										</div>
+										<div class="jan-bottom-grid-right">
+											<p>1 PM</p>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div class="jan-bottom-grid">
+
+										<div class="jan-bottom-grid-left1">
+											<p>Design Meeting</p>
+										</div>
+										<div class="jan-bottom-grid-right">
+											<p>5 PM</p>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div class="jan-bottom-grid">
+
+										<div class="jan-bottom-grid-left1">
+											<p>Dinner</p>
+										</div>
+										<div class="jan-bottom-grid-right">
+											<p>9 PM</p>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul> -->
+					<!-- <table style="margin: auto; height: 100%; text-align: center; margin-top: 10px;">
+						<tr>
+							<td id="gmail"><a href="mailto:phuoctruong554@gmai.com" target="_blank"
+									style="width: auto; height: auto; display: block;"><img src="images/gmail.png"
+										alt="" style="text-align: center;"></a></td>
+
+							<td id="instagram"><a href="https://www.instagram.com/phc.trng/"
+									style="width: auto; height: auto; display: block;" target="_blank"><img
+										src="images/ins.png" alt=""></a></td>
+						</tr>
+						<td id="facebook"><a href="https://www.facebook.com/P.T.H.9100/"
+								style="width: auto; height: auto; display: block;" target="_blank"><img
+									src="images/facebook.png" alt=""></a></td>
+						<td id="zalo"><a href="https://zalo.me/0934802184" style=" width: auto; height: auto; "
+								target="_blank"><img src="images/zl.jpg" alt=""></a></td>
+
+						</tr>
+						<tr>
+							<td id="phone"><a href="tel:0934802184"
+									style="width: auto; height: auto; display: block;"><img src="images/phone.png"
+										alt=""></a></td>
+							<td id="spotify"><a
+									href="https://open.spotify.com/playlist/6yk2K0sVtRZJT8MirnKuF3?fbclid=IwAR0hD3P6a_GRUQTi05Xm0W_JzrFVJ2c7_ENnM7icW8UZPK6_hS2t9wYgQDw"
+									style="width: auto; height: auto; display: block;" target="_blank"><img
+										src="images/spotify.png" alt=""></a></td>
+						</tr>
+
+					</table> -->
+					<ul>
+						<li>
+							<div id="row_1" class="row row1">
+								<a id="a_1" href="https://www.facebook.com/P.T.H.9100/" target="_blank">
+									<div id="align_1" class="align">
+										<ul>
+											<li> <img src="images/facebook.png"> </li>
+											<li style="font-family: monospace;">Facebook</li>
+										</ul>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div id="row_1" class="row row1">
+								<a href="https://www.instagram.com/phc.trng/" target="_blank">
+									<ul>
+										<li> <img src="images/ins.png"> </li>
+										<li style="font-family: monospace;">Instagram</li>
+									</ul>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div id="row_1" class="row row1">
+								<a href="mailto:phuoctruong554@gmai.com" target="_blank">
+									<ul>
+										<li> <img src="images/gmail.png"> </li>
+										<li style="font-family: monospace;">Gmail</li>
+									</ul>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div id="row_1" class="row row1">
+								<a href="tel:0934802184" target="_blank">
+									<ul>
+										<li> <img src="images/phone.png"> </li>
+										<li style="font-family: monospace;">Phone Number</li>
+									</ul>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div id="row_1" class="row row1">
+								<a href="https://zalo.me/0934802184" target="_blank">
+									<ul>
+										<li> <img src="images/zl.jpg"> </li>
+										<li style="font-family: monospace;">Zalo</li>
+									</ul>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div id="row_1" class="row row1">
+								<a href="https://open.spotify.com/playlist/6yk2K0sVtRZJT8MirnKuF3?fbclid=IwAR0hD3P6a_GRUQTi05Xm0W_JzrFVJ2c7_ENnM7icW8UZPK6_hS2t9wYgQDw"
+									target="_blank">
+									<ul>
+										<li> <img src="images/spotify.png"> </li>
+										<li style="font-family: monospace;">Spotify</li>
+									</ul>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div id="block"
+				style="display: block; width: auto; height: 30px; background-color: rgba(181, 203, 209, 0.692);">
+				<p
+					style="font-size: small; text-align: center; vertical-align: auto; font-family: Verdana, Geneva, Tahoma, sans-serif ; height: auto; padding-top: 5px;">
+					KEEP IN TOUCH WITH ME!!!</p>
+			</div>
+			<!-- FlexSlider-->
+			<!-- <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+								<script defer src="js/jquery.flexslider.js"></script>
+								<script type="text/javascript">
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script> -->
+			<!--End-slider-script-->
+			<div id="test" style="display: none; "></div>
+			<div id="datetime" style="display: none;"></div>
+			<script>
+				const date = new Date()			
+				document.getElementById("test").innerHTML = navigator.platform
+				document.getElementById("datetime").innerHTML = "Ngày truy cập: " + date.toLocaleTimeString() + "<br>" + date.toLocaleDateString();
+			</script>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
